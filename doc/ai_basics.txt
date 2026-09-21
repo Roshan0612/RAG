@@ -1,0 +1,7 @@
+Artificial Intelligence (AI) is the field of building systems that can perform tasks normally requiring human intelligence.
+
+This includes reasoning, learning, perception, language understanding, and decision-making. Early AI systems were rule-based and symbolic, but modern AI relies heavily on machine learning and deep learning.
+
+Machine learning models are trained on large datasets to identify patterns and make predictions. Neural networks are especially useful for computer vision, speech recognition, and natural language processing.
+
+A key challenge in AI is balancing generalization and overfitting. Good models learn meaningful patterns while staying robust on unseen inputs.

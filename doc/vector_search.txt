@@ -1,0 +1,7 @@
+Vector search is a technique for finding semantically similar items using numerical representations called embeddings. Instead of matching exact words, embedding models convert text into dense vectors that capture meaning.
+
+In retrieval systems, these embeddings are stored in a vector database such as Chroma. A user query is embedded in the same space, and the system finds nearest neighbors based on vector similarity, typically cosine similarity.
+
+This approach supports semantic search, recommendation, and clustering tasks. It is especially useful when users ask questions in natural language rather than exact keyword matches.
+
+The main tradeoffs are retrieval quality, memory usage, and latency. For production systems, chunk size, embedding model choice, and metadata filtering all matter.

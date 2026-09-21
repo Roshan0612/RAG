@@ -1,0 +1,7 @@
+RAG stands for Retrieval-Augmented Generation.
+
+It combines a retriever and a language model so the model can use external knowledge instead of only its training data.
+
+In practical systems, raw files are often stored in folders, processed with a chunking strategy, converted into embeddings, and saved in a vector database.
+
+This helps with question answering, chatbots, and knowledge assistants.
