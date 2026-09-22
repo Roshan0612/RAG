@@ -29,20 +29,8 @@ def retrieve_documents(query: str, top_k: int = 3):
     vectorstore = get_vectorstore()
     results = vectorstore.similarity_search_with_score(query, k=top_k)
 
-    print("=" * 80)
-    print(f"QUERY: {query}")
-    print("=" * 80)
-
     if not results:
-        print("No relevant documents found.")
         return []
-
-    for index, (doc, score) in enumerate(results, start=1):
-        print(f"\n--- RESULT {index} ---")
-        print(f"SOURCE: {doc.metadata.get('source', 'unknown')}")
-        print(f"SCORE: {score:.4f}")
-        print(doc.page_content[:500].replace("\n", " ").strip())
-        print("-" * 80)
 
     return results
 

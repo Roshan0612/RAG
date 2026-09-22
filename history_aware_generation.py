@@ -77,19 +77,6 @@ def generate_history_aware_answer(history, query, top_k=3):
     if answer is None:
         return "Ollama model could not be loaded. Please ensure a compatible model is installed."
 
-    print("=" * 80)
-    print("HISTORY-AWARE ANSWER")
-    print("=" * 80)
-    print(f"Question: {query}")
-    print("\nRetrieved context:")
-    for i, doc in enumerate(docs, start=1):
-        print(f"\n--- CONTEXT {i} ---")
-        print(doc.page_content[:400].replace("\n", " ").strip())
-    print("\n" + "=" * 80)
-    print("Answer:")
-    print(answer)
-    print("=" * 80)
-
     return answer
 
 
