@@ -71,18 +71,6 @@ def generate_answer(query: str, top_k: int = 3):
             "Please run: ollama pull llama3.2:1b"
         )
 
-    print("=" * 80)
-    print("RETRIEVED CONTEXT")
-    print("=" * 80)
-    for i, doc in enumerate(docs, start=1):
-        print(f"\n--- CONTEXT {i} ---")
-        print(f"SOURCE: {doc.metadata.get('source', 'unknown')}")
-        print(doc.page_content[:400].replace("\n", " ").strip())
-    print("\n" + "=" * 80)
-    print("FINAL ANSWER")
-    print("=" * 80)
-    print(answer)
-
     return answer
 
 
